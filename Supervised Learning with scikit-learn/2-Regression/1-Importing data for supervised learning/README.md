@@ -1,0 +1,19 @@
+Importing data for supervised learning
+
+In this chapter, you will work with Gapminder data that we have consolidated into one CSV file available in the workspace as 'gapminder.csv'. Specifically, your goal will be to use this data to predict the life expectancy in a given country based on features such as the country's GDP, fertility rate, and population. As in Chapter 1, the dataset has been preprocessed.
+
+Since the target variable here is quantitative, this is a regression problem. To begin, you will fit a linear regression with just one feature: 'fertility', which is the average number of children a woman in a given country gives birth to. In later exercises, you will use all the features to build regression models.
+
+Before that, however, you need to import the data and get it into the form needed by scikit-learn. This involves creating feature and target variable arrays. Furthermore, since you are going to use only one feature to begin with, you need to do some reshaping using NumPy's .reshape() method. Don't worry too much about this reshaping right now, but it is something you will have to do occasionally when working with scikit-learn so it is useful to practice.
+
+<br>
+
+Instructions
+
+Import numpy and pandas as their standard aliases.
+
+Read the file 'gapminder.csv' into a DataFrame df using the read_csv() function.
+
+Create array X for the 'fertility' feature and array y for the 'life' target variable.
+
+Reshape the arrays by using the .reshape() method and passing in -1 and 1.

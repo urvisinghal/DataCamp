@@ -6,7 +6,7 @@ Recall that lasso performs regularization by adding to the loss function a penal
 
 If instead you took the sum of the squared values of the coefficients multiplied by some alpha - like in Ridge regression - you would be computing the  norm. In this exercise, you will practice fitting ridge regression models over a range of different alphas, and plot cross-validated  scores for each, using this function that we have defined for you, which plots the  score as well as standard error for each alpha:
 
-def display_plot(cv_scores, cv_scores_std):
+```def display_plot(cv_scores, cv_scores_std):
     fig = plt.figure()
     ax = fig.add_subplot(1,1,1)
     ax.plot(alpha_space, cv_scores)
@@ -19,7 +19,8 @@ def display_plot(cv_scores, cv_scores_std):
     ax.axhline(np.max(cv_scores), linestyle='--', color='.5')
     ax.set_xlim([alpha_space[0], alpha_space[-1]])
     ax.set_xscale('log')
-    plt.show()
+    plt.show()```
+    
 Don't worry about the specifics of the above function works. The motivation behind this exercise is for you to see how the  score varies with different alphas, and to understand the importance of selecting the right value for alpha. You'll learn how to tune alpha in the next chapter.
 
 <br>
